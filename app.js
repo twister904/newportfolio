@@ -44,3 +44,18 @@ function pagetransitions()
     })
 }
 pagetransitions();
+
+// Get a reference to the form element
+const form = document.getElementById('myForm');
+
+// Listen for the "keydown" event on the form
+form.addEventListener('keydown', function(event) {
+  // Check if the pressed key is the "Enter" key (key code 13)
+  if (event.keyCode === 13) {
+    // Prevent the default behavior (e.g., page refresh)
+    event.preventDefault();
+    
+    // Trigger the form submission
+    form.submit();
+  }
+});

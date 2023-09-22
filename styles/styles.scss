@@ -7,8 +7,8 @@
 }
 :root
 {
-    --color-primary:#191d26;
-    --color-secondary:#27AE60;
+    --color-primary:#181823;
+    --color-secondary:#537FE7;
     --color-white:#ffffff;
     --color-black:#000;
     --color-grey0:#f8f8f8;
@@ -24,7 +24,7 @@
 
 .light-mode{
     --color-primary:#ffffff;
-    --color-secondary:#2dabe1;
+    --color-secondary:#00C4FF;
     --color-white:#454e56;
     --color-black:#000;
     --color-grey0:#f8f8f8;
@@ -329,19 +329,25 @@ section{
                         
                     }
                     .html{
-                        width: 70%;
+                        width: 80%;
                     }
                     .CSS{
-                        width: 60%;
+                        width: 70%;
                     }
                     .JS{
-                        width: 60%;
+                        width: 80%;
                     }
                     .NODE{
-                        width: 60%;
+                        width: 70%;
                     }
                     .Clang{
-                        width: 80%;
+                        width: 85%;
+                    }
+                    .opencv{
+                        width: 60%;
+                    }
+                    .DSA{
+                        width: 75%;
                     }
 
                 }
@@ -645,6 +651,7 @@ section{
         .submit-btn{
             display: flex;
             justify-content: flex-start;
+            gap: 2rem;
         }
     }
 }
@@ -694,6 +701,27 @@ section{
     }
     
 }
+.submit-form {
+    width: 200px;
+    height: 50px;
+    color: inherit;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: background-color 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--color-secondary); 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+        cursor: pointer; 
+    }
+}
+
 .main-title{
     text-align: center;
     h2{
