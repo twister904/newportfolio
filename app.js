@@ -2,7 +2,18 @@ const sections=document.querySelectorAll('.section');
 const sectBtns=document.querySelectorAll('.controls');
 const sectBtn=document.querySelectorAll('.control');
 const allSections=document.querySelector('.main-content');
+document.addEventListener('DOMContentLoaded', function () {
+    var textElement = document.getElementById('changingText');
+    var texts = ['Full Stack developer🚀','AI & ML Learner🚀','Cloud Enthusiast🚀','DSA Practitioner🚀','Open Source Contributor🚀'];
+    var currentIndex = 0;
 
+    function changeText() {
+        textElement.textContent = texts[currentIndex];
+        currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    setInterval(changeText, 1000); // Change text every 3 seconds
+});
 
 function pagetransitions()
 {
@@ -59,3 +70,4 @@ form.addEventListener('keydown', function(event) {
     form.submit();
   }
 });
+
